@@ -137,10 +137,7 @@ C  -> lambda
 H  -> T { H.tipo := T.tipo}
 H  -> lambda
 
-A  -> T { A.tipo := T.tipo} 
-A  -> ID { if (BuscaTS(id)==null)
-			AnyadeTG(id.ent, addDespl(), int, 2); S.tipo =ok }
-A  -> K  { A.param = K.param }???????
+
 A  -> lambda
 
 K  -> , T ID K' { AnyadeTL(id.ent, addDesp(), T.tipo, T.tam),
